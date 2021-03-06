@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+.police-app {
+    display: none;
+    /* display: block; */
+    position: relative;
+    width: 103.5%;
+    height: 103.5%;
+    /* top: 3%; */
+    top: 103.5%;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+::-webkit-scrollbar
+{
+	width: 3px;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: rgba(0,0,0,0.5);
+}
+
+.police-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 3vh;
+    padding-right: 0.5vw;
+    padding-left: 0.5vw;
+    padding-bottom: 1vh;
+    color:#ffffff;
+    font-size: 12px;
+    background: #004682;
+}
+
+.police-header p {
+    padding-right: 0.5vw;
+}
+
+.police-header .app-title {
+    font-weight: bold;
+    float: left;
+}
+
+.police-header .app-character-name {
+    float:right;
+}
+
+.police-tabs {
+    position: absolute;
+    top: 5.5vh;
+    left: 0;
+}
+
+.police-tabs .police-tab-item {
+    background: #004682;
+    color: #ffffff;
+    text-align: center;
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 12px;
+    border-radius: 5px;
+    transition: background 500ms ease-in-out;
+}
+
+.police-tabs .police-tab-item:hover {
+    background: #007be7;
+}
+
+.police-tab-item .police-tab-info {
+    margin-top: 30%;
+}
+
+.police-tab-item .police-tab-info i {
+    margin-bottom: 5px;
+}
+
+.police-person {
+    display:none;
+    position: absolute;
+    top: 5.5vh;
+    left: 0;
+    height: 100%;
+}
+
+.police-search-person {
+    width: 100%;
+    margin: 12px;
+}
+
+.police-search-vehicle {
+    width: 100%;
+    margin: 12px;
+}
+
+.police-input {
+    border: none;
+    outline: none;
+    font-size: 13px;
+    border: 1px solid rgb(165, 165, 165);
+    transition: border 0.3s ease-in-out;
+    padding: 4px 8px!important;
+    border-radius: 0.6vh;
+}
+
+.police-input:focus {
+    border: 1px solid #004682;
+}
+
+.police-input::placeholder {
+    font-size: 13px;
+}
+
+.police-button {
+    border-radius: 0.6vh;
+    background: #004682;
+    transition: all 500ms ease-in-out;
+    font-size: 13px;
+    color: white;
+    font-family: sans-serif;
+    line-height: 2.3vh;
+    font-weight: bold;
+    letter-spacing: 0.1vh;
+    padding: 2px 4px!important;
+    margin-left: 20px;
+}
+
+.police-button:hover {
+    background: #007be7;
+    color: white;
+}
+
+.police-person-found {
+    width: 100%;
+    max-height: 65%;
+    overflow: auto;
+    padding: 10px;
+}
+
+.person-found-item {
+    background: #004682;
+    padding: 10px;
+    color: #ffffff;
+    text-align: left;
+    width: 100%;
+    margin: auto;
+    border-radius: 5px;
+    transition: all 500ms ease-in-out;
+    margin-bottom: 1vh;
+}
+
+.person-found-item:hover {
+    background: #007be7;
+}
+
+.person-found-item .person-name {
+    font-size: 14px;
+}
+
+.person-found-item .person-citizenid {
+    font-size: 10px;
+}
+
+.person-found-item hr {
+    margin-top: 0.5vh;
+    margin-bottom: 0.5vh;
+}
+
+.person-found-item .person-birthdate {
+    font-size: 12px;
+}
+
+.person-found-item .person-phonenumber {
+    font-size: 12px;
+}
+
+.person-found-item .person-address {
+    font-size: 12px;
+}
+
+.person-found-item .person-status {
+    font-size: 13px;
+}
+
+.person-status-active {
+    color: #962626;
+    font-weight: bold;
+}
+
+.person-status-inactive {
+    color: #26962c;
+    font-weight: bold;
+}
+
+.police-vehicle {
+    display:none;
+    position: absolute;
+    top: 5.5vh;
+    left: 0;
+    height: 100%;
+}
+
+.police-vehicle-person {
+    width: 100%;
+    margin: 12px;
+}
+
+.police-vehicle-found {
+    width: 100%;
+    max-height: 65%;
+    overflow: auto;
+    padding: 10px;
+}
+
+.vehicle-found-item {
+    background: #004682;
+    padding: 10px;
+    color: #ffffff;
+    text-align: left;
+    width: 90%;
+    margin-left: 0.33vw;
+    border-radius: 5px;
+    transition: all 500ms ease-in-out;
+    margin-bottom: 1vh;
+}
+
+.vehicle-found-item:hover {
+    background: #007be7;
+}
+
+.vehicle-found-item .vehicle-name {
+    font-size: 14px;
+}
+
+.vehicle-found-item .vehicle-plate {
+    font-size: 10px;
+}
+
+.vehicle-found-item .vehicle-person {
+    font-size: 12px;
+}
+
+.vehicle-found-item hr {
+    margin-top: 0.5vh;
+    margin-bottom: 0.5vh;
+}
+
+.vehicle-found-item .vehicle-status {
+    font-size: 13px;
+}
+
+.vehicle-status-active {
+    color: #962626;
+    font-weight: bold;
+}
+
+.vehicle-status-inactive {
+    color: #26962c;
+    font-weight: bold;
+}
+
+.police-alerts {
+    display:none;
+    position: absolute;
+    top: 5.5vh;
+    left: 0;
+    height: 100%;
+}
+
+.police-incomming-alerts {
+    width: 100%;
+    max-height: 65%;
+    overflow: auto;
+    padding: 10px;
+}
+
+.police-alert-item {
+    background: #004682;
+    padding: 10px;
+    color: #ffffff;
+    text-align: left;
+    width: 90%;
+    margin-left: 0.33vw;
+    border-radius: 5px;
+    transition: all 500ms ease-in-out;
+    margin-bottom: 1vh;
+}
+
+.police-alert-item:hover {
+    background: #007be7;
+}
+
+.police-alert-item .alert-title {
+    font-size: 14px;
+}
+
+.police-alert-item .alert-description {
+    font-size: 12px;
+    font-style: italic;
+}
+
+.police-alert-item hr {
+    margin-top: 0.5vh;
+    margin-bottom: 0.5vh;
+}
+
+.police-light-button {
+    float: right;
+    border-radius: 0.6vh;
+    background: #f7f7f7;
+    transition: all 500ms ease-in-out;
+    font-size: 12px;
+    color: rgb(15, 15, 15);
+    font-family: sans-serif;
+    line-height: 2.3vh;
+    padding: 2px 4px!important;
+}
+
+.police-light-button:hover {
+    background: #d8d8d8;
+    color: rgb(5, 5, 5);
+}

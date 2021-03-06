@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+
+.container {
+    height: 100vh;
+    width: 100vw;
+}
+
+.phone-frame {
+    display: none;
+    position: absolute;
+    width: 270px;
+    height: 585px;
+    left: 75%;
+    top: 100%;
+}
+
+#phone-frame {
+    position: absolute;
+    width: 100%;
+    pointer-events: none;
+    z-index: 999;
+}
+
+.phone-container {
+    display: none;
+    position: absolute;
+    width: 255px;
+    height: 560px;
+    left: 75.45%;
+    top: 100%;
+    border-radius: 10px;
+    background-color: black;
+    
+}
+
+.home-container {
+    position: absolute;
+    width: 4vh;
+    height: 2vh;
+    top: 92%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    border-radius: 5px;
+    background-color: rgba(148, 148, 148, 0);
+    transition: all 0.1s ease-in-out;
+    z-index: 121;
+}
+
+.home-container:hover {
+    background-color: rgb(129, 129, 129);
+}
+
+.home-btn {
+    position: absolute;
+    height: 35%;
+    width: 3vh;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 6px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 101;
+    transition: all 0.3s ease-in-out;
+}
+
+.home-btn:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.top-bar {
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    top: 3.2%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    z-index: 101;
+    background-color: rgba(0, 0, 0, 0.35);
+    box-shadow: inset 0px 0px 3px 0px rgba(255, 255, 255, 0.2);
+}
+
+#provider {
+    font-size: 9px;
+    font-family: 'Open Sans';
+    margin-left: 10px;
+    margin-top: 6px;
+    float: left;
+    color: #ffffff;
+}
+
+#time {
+    font-size: 9px;
+    font-family: 'Open Sans';
+    margin-right: 10px;
+    margin-top: 6px;
+    color: #ffffff;
+    float: right;
+}
+
+.phone-home-page {
+    position: absolute;
+    width: 103.5%;
+    height: 103.5%;
+    right: 0;
+    border-radius: 10px;
+    background-image: url('./img/bg-1.png');
+}
+
+.phone-apps {
+    position: relative;
+    width: 85%;
+    height: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 11%;
+}
+
+.app {
+    width: 43px;
+    height: 43px;
+    float: left;
+    margin-left: 12px;
+    margin-top: 12px;
+    margin-bottom: 4px;
+    border-radius: 15px;
+}
+
+.app-slot {
+    float: left;
+}
+
+.empty-slot {
+    width: 43px;
+    height: 43px;
+    margin-left: 12px;
+    margin-top: 12px;
+    margin-bottom: 4px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.07);
+    transition: background-color, border-radius 0.2s ease-in-out;
+}
+
+.valid-app-hover {
+    background-color: rgba(9, 59, 3, 0.2);
+    border-radius: 11px;
+}
+
+#app-icon {
+    font-size: 20px;
+    color: white;
+    padding: 11px 9px;
+}
+
+.suggestedContact {
+    display: none;
+    position: absolute;
+    bottom: 20%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    background: rgb(255, 255, 255);
+    width: 80%;
+    height: 18%;
+    border-radius: 1vh;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.25);
+}
+
+.suggestedContact-header {
+    position: relative;
+    text-align: center;
+    color: black;
+    font-size: 1.2vh;
+    padding-top: 1vh;
+}
+
+.suggestedContact-header > p {
+    font-size: 1.2vh;
+}
+
+.suggestedContact-buttons {
+    position: absolute;
+    bottom: 0.3vh;
+    width: 100%;
+    height: 35%;
+}
+
+.suggestedContact-button {
+    position: relative;
+    float: left;
+    width: 40%;
+    left: 1.3vh;
+    margin-right: 0.7vh;
+    border-radius: 0.6vh;
+    text-align: center;
+    background: rgb(45, 45, 95);
+    height: 70%;
+    transition: all 0.1s ease-in-out;
+}
+
+.suggestedContact-button:hover {
+    background: rgb(62, 62, 131);
+}
+
+.suggestedContact-button > p {
+    font-size: 0.9vh;
+    color: white;
+    font-family: sans-serif;
+    line-height: 2.3vh;
+    font-weight: bold;
+    letter-spacing: 0.1vh;
+}
+
+.payphone {
+    height: 100vh;
+    display: none;
+}
+
+.payphone-frame {
+    width: 50vh;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.payphone-dials {
+    position: relative;
+    height: 11vh;
+    width: 12vh;
+    margin: 0 auto;
+    top: 44vh;
+    left: 7.1vh;
+}
+
+.payphone-dial {
+    position: relative;
+    float: left;
+    width: 3vh;
+    height: 2vh;
+    background-color: rgba(221, 221, 221, 0.25);
+    margin-left: 0.7vh;
+    margin-top: 0.8vh;
+    top: -0.5vh;
+    text-align: center;
+    line-height: 2vh;
+    border-radius: 1vh;
+    transition: 0.1s;
+}
+
+.payphone-dial:hover {
+    background-color: rgba(221, 221, 221, 0.9);
+}
+
+.payphone-input {
+    position: relative;
+    width: 22vh;
+    margin: 0 auto;
+    top: 11vh;
+    left: 2.5vh;
+    font-size: 2.3vh;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+.payphone-input > p {
+    font-family: 'Roboto Mono', sans-serif;
+}
+
+.payphone-call {
+    height: 2.2vh;
+    width: 3.2vh;
+    background-color: rgba(221, 221, 221, 0.25);
+    position: relative;
+    margin: 0 auto;
+    top: 41.5vh;
+    left: 16.8vh;
+    border-radius: 1vh;
+    transition: 0.1s;
+}
+
+.payphone-call:hover {
+    background-color: rgba(221, 221, 221, 0.9);
+}
+
+.suggestedBank {
+    display: none;
+    position: absolute;
+    bottom: 20%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    background: rgb(255, 255, 255);
+    width: 80%;
+    height: 18%;
+    border-radius: 1vh;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.25);
+}
+
+.suggestedBank-header {
+    position: relative;
+    text-align: center;
+    color: black;
+    font-size: 1.2vh;
+    padding-top: 1vh;
+}
+
+.suggestedBank-header > p {
+    font-size: 1.2vh;
+}
+
+.suggestedBank-buttons {
+    position: absolute;
+    bottom: 0.3vh;
+    width: 100%;
+    height: 35%;
+}
+
+.suggestedBank-button {
+    position: relative;
+    float: left;
+    width: 40%;
+    left: 1.3vh;
+    margin-right: 0.7vh;
+    border-radius: 0.6vh;
+    text-align: center;
+    background: rgb(45, 45, 95);
+    height: 70%;
+    transition: all 0.1s ease-in-out;
+}
+
+.suggestedBank-button:hover {
+    background: rgb(62, 62, 131);
+}
+
+.suggestedBank-button > p {
+    font-size: 0.9vh;
+    color: white;
+    font-family: sans-serif;
+    line-height: 2.3vh;
+    font-weight: bold;
+    letter-spacing: 0.1vh;
+}

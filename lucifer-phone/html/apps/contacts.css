@@ -1,0 +1,510 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+.contacts-app {
+    display: none;
+    position: relative;
+    width: 103.5%;
+    height: 103.5%;
+    /* top: 3%; */
+    top: 103.5%;
+    right: 0;
+    border-radius: 10px;
+    background-color: rgb(241, 241, 241);
+}
+
+.contacts-header {
+    position: absolute;
+    top: 6%;
+    left: 2vh;
+    width: 100%;
+    height: 15%;
+}
+
+.contacts-header > p {
+    font-size: 19px;
+    font-family: 'Lato';
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    overflow: visible;
+}
+
+.my-contact-information {
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    top: 12%;
+    background-color: rgb(223, 223, 223);
+    box-shadow: inset 0px 0px 3px 0px rgba(0, 0, 0, 0.65);
+}
+
+.my-contact-information > p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#firstletters {
+    position: absolute;
+    color: white;
+    font-size: 12px;
+    background-color: #c74040;
+    padding: 11px 10px;
+    top: 19%;
+    left: 3.5%;
+    border-radius: 50%;
+}
+
+#myi-label {
+    position: absolute;
+    color: rgb(36, 36, 36);
+    font-size: 11px;
+    padding: 13px;
+    top: 0;
+    left: 15.5%;
+}
+
+#myi-number {
+    position: absolute;
+    color: rgb(20, 20, 20);
+    font-size: 9px;
+    padding: 13px;
+    top: 30%;
+    left: 15.5%;
+}
+
+.contact-list {
+    position: absolute;
+    height: 62%;
+    max-height: 62%;
+    width: 98%;
+    top: 22%;
+    margin: 0 auto;
+    left: 0;
+    right: 2.5%;
+    overflow-y: scroll !important;
+}
+
+.contact {
+    position: relative;
+    width: 100%;
+    height: 12.5%;
+    background-color: rgb(236, 236, 236);
+    box-shadow: inset 0px 0px 3px 0px rgba(231, 231, 231, 0.3);
+    border-bottom: 2px solid #c5c5c565;
+}
+
+.contact-status {
+    position: absolute;
+    top: 39%;
+    left: 5%;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.online {
+    background-color: #50c740;
+    box-shadow: inset 0px 0px 5px 0px #9dff9dda;
+}
+
+.unknown {
+    background-color: #c79840;
+    box-shadow: inset 0px 0px 5px 0px #ffd99dda;
+}
+
+.offline {
+    background-color: #c74040;
+    box-shadow: inset 0px 0px 5px 0px #ff9d9dda;
+}
+
+.contact-list::-webkit-scrollbar-track
+{
+	background-color: #d3d3d365;
+}
+
+.contact-list::-webkit-scrollbar
+{
+	width: 3px;
+	background-color: #e2e2e265;
+}
+
+.contact-list::-webkit-scrollbar-thumb
+{
+	background-color: #00000060;
+}
+
+.contact-options {
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    right: -6px;
+}
+
+.contact-option {
+    position: relative;
+    width: 31%;
+    height: 100%;
+    float: left;
+    transition: all 0.1s ease-in-out;
+    font-size: 12px;
+}
+
+.contact-option:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#call-contact-icon {
+    position: absolute;
+    color: rgb(0, 0, 0);
+    top: 31%;
+    left: 24%;
+}
+
+#sms-contact-icon {
+    position: absolute;
+    color: rgb(0, 0, 0);
+    top: 31%;
+    left: 24%;
+}
+
+#edit-contact-icon {
+    position: absolute;
+    color: rgb(0, 0, 0);
+    top: 31%;
+    left: 24%;
+}
+
+#contact-name {
+    position: absolute;
+    color: rgb(34, 34, 34);
+    top: 31%;
+    left: 15%;
+    font-family: 'Raleway';
+    font-size: 14px;
+}
+
+.add-contact-container {
+    display: none;
+    position: absolute;
+    width: 90%;
+    height: 50%;
+    top: 103.5%;
+    background-color: white;
+    margin: 0 auto;
+    left: 0;
+    right: 2%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px -2px rgba(0,0,0,0.75);
+}
+
+#add-contact-titel {
+    position: relative;
+    top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: sans-serif !important;
+    text-align: center;
+}
+
+#add-contact-subtitel {
+    position: relative;
+    top: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.add-contact-btn {
+    position: absolute;
+    right: 20px;
+    top: 5%;
+    border-radius: 10px;
+    padding: 8px;
+    transition: all 0.1s ease-in-out;
+}
+
+.add-contact-btn:hover {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.add-contact-btn > i {
+    padding-left: 4px;
+    transition: all 0.1s ease-in-out;
+}
+
+.add-contact-btn:hover > i {
+    color:rgba(0, 0, 0, 0.829);
+}
+
+.contactname-input {
+    position: absolute;
+    top: 70px;
+    width: 130px;
+    left: 25%;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    font-family: 'Raleway';
+    border-bottom: 1px solid rgb(165, 165, 165);
+    transition: border-bottom 0.3s ease-in-out;
+}
+
+.number-input {
+    position: absolute;
+    top: 110px;
+    width: 130px;
+    left: 25%;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    font-family: 'Raleway';
+    border-bottom: 1px solid rgb(165, 165, 165);
+    transition: border-bottom 0.3s ease-in-out;
+}
+
+.contactname-input:focus {
+    border-bottom: 1px solid #c74040;
+}
+
+.number-input:focus {
+    border-bottom: 1px solid #c74040;
+}
+
+.contactname-input::placeholder {
+    font-size: 13px;
+}
+
+.number-input::placeholder {
+    font-size: 13px;
+}
+
+#person-add-icon {
+    position: absolute;
+    top: 70px;
+    left: 20px;
+    font-size: 19px;
+}
+
+#number-add-icon {
+    position: absolute;
+    top: 110px;
+    left: 20px;
+    font-size: 19px;
+}
+
+.submit-contact-btn {
+    position: absolute;
+    bottom: 25%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-color: rgb(32, 32, 54);
+    border-radius: 5px;
+    padding: 10px;
+    width: 75%;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.submit-contact-btn:hover {
+    background-color: rgb(55, 55, 92);
+}
+
+.submit-contact-btn > p {
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    overflow: visible !important;
+}
+
+.back-contact-btn {
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-color: rgb(32, 32, 54);
+    border-radius: 5px;
+    padding: 10px;
+    width: 75%;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.back-contact-btn:hover {
+    background-color: rgb(55, 55, 92);
+}
+
+.back-contact-btn > p {
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    overflow: visible !important;
+}
+
+/* Edit Contact */
+
+.edit-contact-container {
+    display: none;
+    position: absolute;
+    width: 90%;
+    height: 50%;
+    /* top: 33.5%; */
+    top: 103.5%;
+    background-color: white;
+    margin: 0 auto;
+    left: 0;
+    right: 2%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px -2px rgba(0,0,0,0.75);
+}
+
+#edit-contact-titel {
+    position: relative;
+    top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: sans-serif !important;
+    text-align: center;
+}
+
+#edit-contact-subtitel {
+    position: relative;
+    top: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.edit-contactname-input {
+    position: absolute;
+    top: 70px;
+    width: 130px;
+    left: 25%;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    font-family: 'Raleway';
+    border-bottom: 1px solid rgb(165, 165, 165);
+    transition: border-bottom 0.3s ease-in-out;
+}
+
+.edit-number-input {
+    position: absolute;
+    top: 110px;
+    width: 130px;
+    left: 25%;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    font-family: 'Raleway';
+    border-bottom: 1px solid rgb(165, 165, 165);
+    transition: border-bottom 0.3s ease-in-out;
+}
+
+.edit-contactname-input:focus {
+    border-bottom: 1px solid #c74040;
+}
+
+.edit-number-input:focus {
+    border-bottom: 1px solid #c74040;
+}
+
+.edit-contactname-input::placeholder {
+    font-size: 13px;
+}
+
+.edit-number-input::placeholder {
+    font-size: 13px;
+}
+
+#person-add-icon {
+    position: absolute;
+    top: 70px;
+    left: 20px;
+    font-size: 19px;
+}
+
+#number-add-icon {
+    position: absolute;
+    top: 110px;
+    left: 20px;
+    font-size: 19px;
+}
+
+.change-contact-btn {
+    position: absolute;
+    bottom: 25%;
+    left: 12.5%;
+    background-color: rgb(32, 32, 54);
+    border-radius: 5px;
+    padding: 10px;
+    width: 36%;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.change-contact-btn:hover {
+    background-color: rgb(55, 55, 92);
+}
+
+.change-contact-btn > p {
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    overflow: visible !important;
+}
+
+.delete-contact-btn {
+    position: absolute;
+    bottom: 25%;
+    right: 13%;
+    background-color: rgb(32, 32, 54);
+    border-radius: 5px;
+    padding: 10px;
+    width: 36%;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.delete-contact-btn:hover {
+    background-color: rgb(55, 55, 92);
+}
+
+.delete-contact-btn > p {
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    overflow: visible !important;
+}
+
+.back-edit-contact-btn {
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-color: rgb(32, 32, 54);
+    border-radius: 5px;
+    padding: 10px;
+    width: 75%;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.back-edit-contact-btn:hover {
+    background-color: rgb(55, 55, 92);
+}
+
+.back-edit-contact-btn > p {
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    overflow: visible !important;
+}

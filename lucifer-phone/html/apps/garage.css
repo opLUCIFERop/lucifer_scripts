@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+.garage-app {
+    display: none;
+    /* display: block; */
+    position: relative;
+    width: 103.5%;
+    height: 103.5%;
+    /* top: 3%; */
+    top: 103.5%;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.garage-header {
+    position: absolute;
+    top: 6%;
+    left: 6%;
+    width: 100%;
+    height: 10%;
+}
+
+.garage-header > p {
+    font-size: 19px;
+    font-family: 'Lato';
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    overflow: visible;
+}
+
+.garage-vehicles {
+    position: absolute;
+    height: 65%;
+    width: 100%;
+    top: 100px;
+    overflow-y: scroll;
+}
+
+.garage-vehicle {
+    position: relative;
+    width: 90%;
+    height: 22%;
+    left: 3%;
+    background-color: #f6f6f6;
+    margin-top: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.garage-vehicle:hover {
+    background-color: #dfdede;
+}
+
+.garage-vehicle-image {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-size: 250%;
+    background-position-x: -30px;
+    background-position-y: 0;
+    background-repeat: no-repeat;
+}
+
+.garage-vehicle-name {
+    position: absolute;
+    left: 30%;
+    top: 10%;
+    font-family: 'Lato';
+    font-size: 14px;
+}
+
+.garage-vehicle-stats {
+    position: absolute;
+    left: 30%;
+    bottom: 10%;
+    font-family: 'Lato';
+    font-size: 11px;
+    margin-left: ;
+}
+
+.garage-vehicle-garage {
+    position: absolute;
+    left: 30%;
+    top: 33%;
+    font-family: 'Lato';
+    font-size: 12px;
+}
+
+.garage-vehicle-plate {
+    position: absolute;
+    left: 65%;
+    top: 56%;
+    font-family: 'Lato';
+    font-size: 10px;
+}
+
+.garage-vehicle-state {
+    position: absolute;
+    left: 30%;
+    top: 53.5%;
+    font-family: 'Lato';
+    font-size: 15px;
+}
+
+#parking-icon {
+    font-size: 14px;
+    color: rgb(0, 119, 255);
+}
+
+#body-icon {
+    color: rgb(0, 162, 255);
+}
+
+#battery-icon {
+    color: rgb(59, 148, 24);
+}
+
+#fuel-icon {
+    color: rgb(141, 5, 5);
+    font-size: 10px;
+}
+
+#warehouse-icon {
+    color: rgb(31, 31, 31);
+    font-size: 12px;
+}
+
+#car-icon {
+    position: relative;
+    top: 2px;
+    color: rgb(31, 31, 31);
+    font-size: 14px;
+}

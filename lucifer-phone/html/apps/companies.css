@@ -1,0 +1,746 @@
+.companies-app {
+    display: none;
+    position: relative;
+    width: 103.5%;
+    height: 103.5%;
+    /* top: 3.5%; */
+    top: 103.5%;
+    right: 0;
+    border-radius: 10px;
+    background-color: rgb(241, 241, 241);
+}
+
+.companies-item-selected {
+    background: rgba(40, 135, 212, 0.9)!important;
+    color: rgba(255, 255, 255, 1.0)!important;
+}
+
+.companies-item-selected:hover {
+    background: rgba(70, 169, 250, 0.9)!important;
+}
+
+.employee-item-selected {
+    background: rgba(40, 135, 212, 0.9)!important;
+    color: rgba(255, 255, 255, 1.0)!important;
+}
+
+.employee-item-selected:hover {
+    background: rgba(70, 169, 250, 0.9)!important;
+}
+
+.companies-home {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 5%;
+}
+
+.companies-settings {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 103%;
+}
+
+.welcome-title {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 26%;
+    line-height: 20px;
+    padding: 18px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+}
+
+.welcome-title > p {
+    font-size: 18px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.companies-information {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 40%;
+    width: 65%;
+    padding: 14px;
+    border-radius: 11px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.companies-information > p {
+    font-size: 22px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#balance-prefix {
+    font-weight: 600;
+    font-size: 15px;
+    color: rgb(20, 20, 20);
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#balance {
+    font-size: 15px;
+    color: rgb(35, 139, 35);
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#euro-symbol {
+    font-size: 15px;
+    color: rgb(35, 139, 35);
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#iban-prefix {
+    font-weight: 600;
+    font-size: 15px;
+    color: rgb(20, 20, 20);
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#iban {
+    font-size: 15px;
+    color: rgb(26, 26, 26);
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.employee-quit-btn {
+    position: relative;
+    width: 90%;
+    height: 8%;
+    background-color: rgba(179, 34, 34, 0.9);
+    margin: 0 auto;
+    left: -0.45vh;
+    transition: all 0.2s ease-in-out;
+}
+
+.employee-quit-btn:hover {
+    background-color: rgba(247, 67, 67, 0.9);
+}
+
+.employee-quit-btn > p {
+    text-align: center;
+    font-size: 15px;
+    color: rgb(235, 235, 235);
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 45px;
+    font-weight: bold;
+    letter-spacing: 0.1vh;
+    text-transform: uppercase;
+    font-size: 1.2vh;
+}
+
+.companies-quit-btn {
+    position: relative;
+    width: 90%;
+    height: 8%;
+    background-color: rgba(179, 34, 34, 0.9);
+    margin: 0 auto;
+    left: -0.45vh;
+    transition: all 0.2s ease-in-out;
+}
+
+.companies-quit-btn:hover {
+    background-color: rgba(247, 67, 67, 0.9);
+}
+
+.companies-quit-btn > p {
+    text-align: center;
+    font-size: 15px;
+    color: rgb(235, 235, 235);
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 45px;
+    font-weight: bold;
+    letter-spacing: 0.1vh;
+    text-transform: uppercase;
+    font-size: 1.2vh;
+}
+
+.companies-buttons {
+    margin-top: 15%;
+}
+
+.employees-buttons {
+    margin-top: 15%;
+}
+
+.companies-quit-small-btn {
+    position: relative;
+    width: 90%;
+    height: 8%;
+    background-color: rgba(179, 34, 34, 0.9);
+    margin: 0 auto;
+    left: -0.45vh;
+    transition: all 0.2s ease-in-out;
+}
+
+.companies-quit-small-btn:hover {
+    background-color: rgba(247, 67, 67, 0.9);
+}
+
+.companies-quit-small-btn > p {
+    text-align: center;
+    font-size: 15px;
+    color: rgb(235, 235, 235);
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 45px;
+    font-weight: bold;
+    letter-spacing: 0.1vh;
+    text-transform: uppercase;
+    font-size: 1.2vh;
+}
+
+.employee-alter-buttons {
+    position: relative;
+    width: 90%;
+    left: -0.45vh;
+    margin: 0 auto;
+}
+
+.employee-demote-btn {
+    position: relative;
+    width: 50%;
+    height: 8%;
+    background-color: rgba(115, 115, 115, 0.9);
+    margin: 0 auto;
+    transition: all 0.2s ease-in-out;
+    float: left;
+}
+
+.employee-demote-btn:hover {
+    background-color: rgba(160, 160, 160, 0.9);
+}
+
+.employee-demote-btn > p {
+    text-align: center;
+    font-size: 15px;
+    color: rgb(235, 235, 235);
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 45px;
+    font-weight: bold;
+    letter-spacing: 0.1vh;
+    text-transform: uppercase;
+    font-size: 1.2vh;
+}
+
+.employee-promote-btn {
+    position: relative;
+    width: 50%;
+    height: 8%;
+    background-color: rgba(21, 158, 23, 0.9);
+    margin: 0 auto;
+    transition: all 0.2s ease-in-out;
+    float: left;
+}
+
+.employee-promote-btn:hover {
+    background-color: rgba(60, 230, 62, 0.9);
+}
+
+.employee-promote-btn > p {
+    text-align: center;
+    font-size: 15px;
+    color: rgb(235, 235, 235);
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 45px;
+    font-weight: bold;
+    letter-spacing: 0.1vh;
+    text-transform: uppercase;
+    font-size: 1.2vh;
+}
+
+.employee-pay-btn {
+    position: relative;
+    width: 90%;
+    height: 8%;
+    background-color: rgba(34, 109, 179, 0.9);
+    margin: 0 auto;
+    left: -0.45vh;
+    transition: all 0.2s ease-in-out;
+}
+
+.employee-pay-btn:hover {
+    background-color: rgba(67, 151, 247, 0.9);
+}
+
+.employee-pay-btn > p {
+    text-align: center;
+    font-size: 15px;
+    color: rgb(235, 235, 235);
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 45px;
+    font-weight: bold;
+    letter-spacing: 0.1vh;
+    text-transform: uppercase;
+    font-size: 1.2vh;
+}
+
+.companies-settings-small-btn {
+    position: relative;
+    width: 90%;
+    height: 8%;
+    background-color: rgba(34, 109, 179, 0.9);
+    margin: 0 auto;
+    left: -0.45vh;
+    transition: all 0.2s ease-in-out;
+}
+
+.companies-settings-small-btn:hover {
+    background-color: rgba(67, 151, 247, 0.9);
+}
+
+.companies-settings-small-btn > p {
+    text-align: center;
+    font-size: 15px;
+    color: rgb(235, 235, 235);
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 45px;
+    font-weight: bold;
+    letter-spacing: 0.1vh;
+    text-transform: uppercase;
+    font-size: 1.2vh;
+}
+
+.quit-confirm-container {
+    display: none;
+    position: absolute;
+    width: 90%;
+    height: 50%;
+    top: 103%;
+    background-color: white;
+    margin: 0 auto;
+    left: 0;
+    right: 3.5%;
+    border-radius: 3px;
+    box-shadow: 0px 0px 15px -2px rgba(0,0,0,0.75);
+}
+
+.quitperson-confirm-container {
+    display: none;
+    position: absolute;
+    width: 90%;
+    height: 50%;
+    top: 103%;
+    background-color: white;
+    margin: 0 auto;
+    left: 0;
+    right: 3.5%;
+    border-radius: 3px;
+    box-shadow: 0px 0px 15px -2px rgba(0,0,0,0.75);
+}
+
+#transfer-money-titel {
+    position: relative;
+    top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: sans-serif !important;
+    text-align: center;
+}
+
+#transfer-money-subtitel {
+    position: relative;
+    top: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.transfer-money-btn {
+    position: absolute;
+    right: 20px;
+    top: 4%;
+    border-radius: 10px;
+    padding: 8px;
+    transition: all 0.1s ease-in-out;
+}
+
+.transfer-money-:hover {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.transfer-money- > i {
+    padding-left: 4px;
+    transition: all 0.1s ease-in-out;
+}
+
+.transfer-money-btn:hover > i {
+    color:rgba(0, 0, 0, 0.829);
+}
+
+.iban-input {
+    position: absolute;
+    top: 70px;
+    width: 140px;
+    left: 20%;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    font-family: 'Raleway';
+    border-bottom: 1px solid rgb(165, 165, 165);
+    transition: border-bottom 0.3s ease-in-out;
+}
+
+.euro-amount-input {
+    position: absolute;
+    top: 110px;
+    width: 140px;
+    left: 20%;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    font-family: 'Raleway';
+    border-bottom: 1px solid rgb(165, 165, 165);
+    transition: border-bottom 0.3s ease-in-out;
+}
+
+.iban-input:focus {
+    border-bottom: 1px solid #c74040;
+}
+
+.euro-amount-input:focus {
+    border-bottom: 1px solid #c74040;
+}
+
+.iban-input::placeholder {
+    font-size: 13px;
+}
+
+.euro-amount-input::placeholder {
+    font-size: 13px;
+}
+
+/* #person-add-icon {
+    position: absolute;
+    top: 70px;
+    left: 20px;
+    font-size: 19px;
+}
+
+#number-add-icon {
+    position: absolute;
+    top: 110px;
+    left: 20px;
+    font-size: 19px;
+} */
+
+.submit-quit-btn {
+    position: absolute;
+    bottom: 25%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 10px;
+    width: 75%;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.submit-quit-btn:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.submit-quit-btn > p {
+    color: rgb(51, 51, 51);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.1vh;
+    text-transform: uppercase;
+    font-size: 1.2vh;
+}
+
+.submit-quitperson-btn {
+    position: absolute;
+    bottom: 25%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 10px;
+    width: 75%;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.submit-quitperson-btn:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.submit-quitperson-btn > p {
+    color: rgb(51, 51, 51);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.1vh;
+    text-transform: uppercase;
+    font-size: 1.2vh;
+}
+
+.back-quit-btn {
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 10px;
+    width: 75%;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.back-quit-btn:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.back-quit-btn > p {
+    color: rgb(51, 51, 51);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.1vh;
+    text-transform: uppercase;
+    font-size: 1.2vh;
+}
+
+.back-quitperson-btn {
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 10px;
+    width: 75%;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.back-quitperson-btn:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.back-quitperson-btn > p {
+    color: rgb(51, 51, 51);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.1vh;
+    text-transform: uppercase;
+    font-size: 1.2vh;
+}
+
+.new-balance {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    font-size: 11px;
+    text-align: center;
+    top: 53%;
+    color: rgba(9, 125, 9, 1.0);
+}
+
+.companies-app-header {
+    position: relative;
+    height: 10%;
+    width: 96%;
+    background: rgba(20, 34, 78, 0.11);
+    top: 3.7%;
+}
+
+.companies-header-selected {
+    background: rgb(49, 106, 192);
+    color: rgb(255, 255, 255) !important;
+}
+
+.companies-header-selected:hover {
+    background: rgb(49, 106, 192) !important;
+}
+
+.companies-app-header-tab {
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 100%;
+    transition: 0.1s;
+    text-align: center;
+    padding-top: 3%;
+    color: rgba(17, 17, 17, 0.863);
+}
+
+.companies-app-header-tab:hover {
+    background: rgb(184, 184, 184);
+}
+
+.companies-app-header-tab > i {
+    font-size: 2vh;
+}
+
+.companies-app-header-tab > p {
+    font-size: 1vh;
+    padding-top: 4%;
+    font-family: sans-serif;
+}
+
+.companies-accounts-tab {
+    position: relative;
+    max-width: 88%;
+    max-height: 60%;
+    top: 6%;
+    padding: 1vw;
+    margin: 0 auto;
+    right: 2%;
+    overflow: auto;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.employees-accounts-tab {
+    position: relative;
+    max-width: 88%;
+    max-height: 60%;
+    top: 6%;
+    padding: 1vw;
+    margin: 0 auto;
+    right: 2%;
+    overflow: auto;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.companies-bills-tab {
+    position: relative;
+    width: 88%;
+    height: 50%;
+    top: 6%;
+    margin: 0 auto;
+    right: 2%;
+    background: rgba(0, 0, 0, 0.1);
+    overflow-y: scroll;
+}
+
+.companies-item {
+    position: relative;
+    width: 100%;
+    padding: 0.5vw;
+    background: rgba(0, 0, 0, 0.15);
+    margin-bottom: 0.5vh;
+}
+
+.companies-item:hover {
+    background: rgba(0, 0, 0, 0.35);
+}
+
+.employee-item {
+    position: relative;
+    width: 100%;
+    padding: 0.5vw;
+    background: rgba(0, 0, 0, 0.15);
+    margin-bottom: 0.5vh;
+}
+
+.employee-item:hover {
+    background: rgba(0, 0, 0, 0.35);
+}
+
+.company-name {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.1vh;
+    font-size: 1.2vh;
+    color: black;
+}
+
+.employee-name {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.1vh;
+    font-size: 1.2vh;
+    color: black;
+}
+
+.company-rank {
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 0.1vh;
+    text-transform: uppercase;
+    font-size: 1.2vh;
+    color: black;
+}
+
+.employee-rank {
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 0.1vh;
+    text-transform: uppercase;
+    font-size: 1.2vh;
+    color: black;
+}
+
+.account-balance {
+    position: absolute;
+    top: 20%;
+    right: 3%;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 0.1vh;
+    text-transform: uppercase;
+    font-size: 1.2vh;
+    color: black;
+    font-weight: bold;
+}
+
+.bill-pay {
+    position: absolute;
+    right: 5%;
+    top: 16%;
+    width: 16%;
+    font-size: 1.2vh;
+    color: black;
+    background: rgba(255, 255, 255, 0.75);
+    height: 60%;
+}
+
+.companies-accounts-tab {
+    display: block;
+}
+
+.employees-accounts-tab {
+    display: block;
+}
+
+.companies-bills-tab {
+    display: none;
+}
+
+.companies-bill {
+    position: relative;
+    width: 100%;
+    height: 22%;
+    background: rgba(0, 0, 0, 0.15);
+}
+
+.bill-name {
+    position: relative;
+    top: 15%;
+    left: 3%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.1vh;
+    text-transform: uppercase;
+    font-size: 1.2vh;
+    color: black;
+}
+
+.bill-price {
+    position: absolute;
+    top: 55%;
+    left: 3%;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 0.1vh;
+    text-transform: uppercase;
+    font-size: 1.2vh;
+    color: black;
+}

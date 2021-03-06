@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+.call-app {
+    display: none;
+    position: relative;
+    width: 103.5%;
+    height: 103.5%;
+    top: 3%;
+    border-radius: 10px;
+    background: #cb2d3e;
+    background: -webkit-linear-gradient(to top, #ef473a, #cb2d3e);
+    background: linear-gradient(to top, #ef473a, #cb2d3e);
+}
+
+.incoming-call {
+    /* display: block; */
+    display: none;
+}
+
+.incoming-call-number {
+    position: absolute;
+    width: 95%;
+    text-align: center;
+    top: 25%;
+}
+
+.incoming-call-number > p {
+    font-size: 2vh;
+    color: white;
+}
+
+.incoming-call-answer {
+    position: absolute;
+    width: 7vh;
+    height: 7vh;
+    background: rgba(255, 255, 255, 0.85);
+    bottom: 15vh;
+    left: 3vh;
+    border-radius: 50%;
+    border: 5px solid rgba(2, 2, 2, 0.15);
+    transition: all 0.1s linear;
+}
+
+.incoming-call-answer:hover {
+    border: 5px solid rgba(2, 2, 2, 0.35);
+}
+
+.incoming-call-answer > i{
+    color: green;
+    width: 100%;
+    text-align: center;
+    line-height: 6.1vh;
+    font-size: 2.2vh;
+}
+
+.incoming-call-deny {
+    position: absolute;
+    width: 7vh;
+    height: 7vh;
+    background: rgba(255, 255, 255, 0.85);
+    bottom: 15vh;
+    right: 4vh;
+    border-radius: 50%;
+    border: 5px solid rgba(2, 2, 2, 0.15);
+    transition: all 0.1s linear;
+}
+
+.incoming-call-deny:hover {
+    border: 5px solid rgba(2, 2, 2, 0.35);
+}
+
+.incoming-call-deny > i{
+    color: rgb(179, 24, 24);
+    width: 100%;
+    text-align: center;
+    line-height: 6.5vh;
+    font-size: 2.2vh;
+    transform: rotate(137deg);
+}
+
+/* Busy Call */
+
+.busy-call {
+    /* display: block; */
+    display: none;
+}
+
+.busy-call-number {
+    position: absolute;
+    width: 95%;
+    text-align: center;
+    top: 25%;
+}
+
+.busy-call-number > p {
+    font-size: 2vh;
+    color: white;
+}
+
+.busy-call-deny {
+    position: absolute;
+    width: 7vh;
+    height: 7vh;
+    background: rgba(255, 255, 255, 0.85);
+    bottom: 15vh;
+    right: 9.3vh;
+    border-radius: 50%;
+    border: 5px solid rgba(2, 2, 2, 0.15);
+    transition: all 0.1s linear;
+}
+
+.busy-call-deny:hover {
+    border: 5px solid rgba(2, 2, 2, 0.35);
+}
+
+.busy-call-deny > i{
+    color: rgb(179, 24, 24);
+    width: 100%;
+    text-align: center;
+    line-height: 6.5vh;
+    font-size: 2.2vh;
+    transform: rotate(137deg);
+}
+
+
+.outgoing-call {
+    /* display: block; */
+    display: none;
+}
+
+.call-header {
+    position: absolute;
+    top: 6%;
+    left: 6%;
+    width: 100%;
+    height: 10%;
+}
+
+.call-header > p {
+    position: relative;
+    padding-right: 4.7vh;
+    padding-top: 2vh;
+    font-size: 12px;
+    font-family: 'Lato';
+    color: rgb(255, 255, 255);
+    overflow: visible;
+    text-align: center;
+}

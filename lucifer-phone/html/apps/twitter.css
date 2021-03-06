@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+.twitter-app {
+    display: none;
+    /* display: block; */
+    position: relative;
+    width: 103.5%;
+    height: 103.5%;
+    /* top: 3%; */
+    top: 103.5%;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.twitter-header {
+    position: absolute;
+    top: 6%;
+    left: 2vh;
+    width: 100%;
+    height: 15%;
+}
+
+.twitter-new-tweet-header > p {
+    font-size: 15px;
+    font-family: 'Lato';
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    overflow: visible;
+}
+
+.twitter-new-tweet {
+    position: absolute;
+    bottom: 7vh;
+    right: 3vh;
+    width: 3.5vh;
+    height: 3.5vh;
+    border-radius: 50%;
+    background-color: #1da1f2;
+    text-align: center;
+    transition: background-color 0.1s ease-in-out;
+}
+
+.twitter-tweets {
+    position: relative;
+    top: 7vh;
+    height: 37vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+} 
+
+.twitter-tweets::-webkit-scrollbar {
+    display: none;
+}
+
+.twitter-new-tweet:hover {
+    background-color: #146ba1;
+}
+
+#twitter-new-tweet-icon {
+    position: relative;
+    line-height: 3.3vh;
+    color: white;
+}
+
+.twitter-app-tweet {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 0.5vh;
+    border-top: 0.15vh solid rgba(0, 0, 0, 0.3);
+}
+
+.tweeter-image {
+    position: absolute;
+    left: 0.5vh;
+    top: 0.75vh;
+    width: 2.8vh;
+}
+
+.tweeter-message {
+    padding-left: 4vh;
+}
+
+.tweeter-message > p {
+    font-size: 13px;
+    font-family: 'Lato';
+    display:inline-block;
+    text-overflow: ellipsis;
+    width: 19vh;
+}
+
+.tweet-name {
+    padding: 1vh 4vh;
+}
+
+#tweeter-name {
+    font-weight: bold;
+    font-size: 14px;
+    font-family: 'Lato';
+}
+
+#tweeter-ad {
+    position: relative;
+    font-size: 12px;
+    font-family: 'Lato';
+}
+
+.twitter-app-new-tweet {
+    position: absolute;
+    width: 80%;
+    height: 48%;
+    background: rgb(233, 233, 233);
+    margin: 0 auto;
+    left: 0;
+    right: 1vh;
+    bottom: -27vh;
+    border-radius: 0px 0px 8px 8px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.8);
+}
+
+.twitter-header > p {
+    font-size: 19px;
+    font-family: 'Lato';
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    overflow: visible;
+}
+
+.twitter-new-tweet-header {
+    position: absolute;
+    top: 6%;
+    left: 5.7vh;
+    width: 100%;
+    height: 45%;
+}
+
+#new-tweet-message {
+    position: absolute;
+    border: none;
+    height: 15vh;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    background-color: lightgray;
+    outline: none;
+    border-bottom: 2px solid #1da0f200;
+    resize: none;
+    transition: border-bottom 0.1s ease-in-out;
+    padding: 0.87vh;
+    font-size: 13px;
+    font-family: 'Lato';
+    top: 5vh;
+    width: 17vh;
+}
+
+#new-tweet-message::-webkit-scrollbar {
+    display: none;
+}
+
+#new-tweet-message::placeholder {
+    font-size: 13px;
+    font-family: 'Lato';
+}
+
+#new-tweet-message:focus {
+    border-bottom: 2px solid #1da0f2b0;
+}
+
+.send-new-tweet {
+    position: absolute;
+    bottom: 8%;
+    left: 18%;
+    background-color: rgb(32, 32, 54);
+    padding: 0.8vh;
+    border-radius: 5px;
+}
+
+.cancel-new-tweet {
+    position: absolute;
+    bottom: 8%;
+    right: 15%;
+    background-color: rgb(32, 32, 54);
+    padding: 0.8vh;
+    border-radius: 5px;
+}
+
+.send-new-tweet > p {
+    font-size: 12px;
+    color: rgb(195, 195, 195);
+    font-family: 'Lato';
+}
+
+.cancel-new-tweet > p {
+    font-size: 12px;
+    color: rgb(195, 195, 195);
+    font-family: 'Lato';
+}

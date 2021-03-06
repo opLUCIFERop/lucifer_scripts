@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="reset.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+    <!-- Apps CSS -->
+    <link rel="stylesheet" href="./apps/settings.css"> <!-- Settings CSS -->
+    <link rel="stylesheet" href="./apps/contacts.css"> <!-- Contacts CSS -->
+    <link rel="stylesheet" href="./apps/bank.css">     <!-- Bank CSS -->
+    <link rel="stylesheet" href="./apps/messages.css"> <!-- Messages CSS -->
+    <link rel="stylesheet" href="./apps/garage.css">   <!-- Garage CSS -->
+    <link rel="stylesheet" href="./apps/mail.css">     <!-- Mail CSS -->
+    <link rel="stylesheet" href="./apps/phone-notify.css">     <!-- Phone Notify CSS -->
+    <link rel="stylesheet" href="./apps/twitter.css">     <!-- Twitter CSS -->
+    <link rel="stylesheet" href="./apps/advert.css">     <!-- Advert CSS -->
+    <link rel="stylesheet" href="./apps/call.css">     <!-- Call CSS -->
+    <link rel="stylesheet" href="./apps/police.css">     <!-- MEOS CSS -->
+    <link rel="stylesheet" href="./apps/companies.css">     <!-- COMPANIES CSS -->
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>  
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" ></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+    <title>QB Phone</title>
+</head>
+    <body>
+
+        <div class="payphone">
+            <img src="./img/payhone.png" alt="payphone" class="payphone-frame">
+
+            <div class="payphone-dials">
+                <div class="payphone-dial" data-number="1"></div>
+                <div class="payphone-dial" data-number="2"></div>
+                <div class="payphone-dial" data-number="3"></div>
+                <div class="payphone-dial" data-number="4"></div>
+                <div class="payphone-dial" data-number="5"></div>
+                <div class="payphone-dial" data-number="6"></div>
+                <div class="payphone-dial" data-number="7"></div>
+                <div class="payphone-dial" data-number="8"></div>
+                <div class="payphone-dial" data-number="9"></div>
+                <div class="payphone-dial" data-number="remove"></div>
+                <div class="payphone-dial" data-number="0"></div>
+            </div>
+
+            <div class="payphone-call"></div>
+
+            <div class="payphone-input">
+                <p></p>
+            </div>
+        </div>
+
+        <div class="phone-notify-container">
+            <div class="new-notify">
+                <div class="new-notify-titel"></div>
+                <div class="new-notify-content"></div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="phone-frame">
+                <img src="./img/phone-frames/s10.png" id="phone-frame">
+            </div>
+
+            <div class="phone-container">
+
+                <div class="top-bar">
+                    <span id="time">12.05</span>
+                    <span id="provider"><i class="fa fa-signal"></i> kubie 5G</span>
+                </div>
+
+                <div class="phone-home-page">
+                    <div class="phone-apps">
+                        <div class="app-slot slot-1 empty-slot"></div>
+                        <div class="app-slot slot-2 empty-slot"></div>   
+                        <div class="app-slot slot-3 empty-slot"></div>   
+                        <div class="app-slot slot-4 empty-slot"></div>
+                        
+                        <div class="app-slot slot-5 empty-slot"></div>
+                        <div class="app-slot slot-6 empty-slot"></div>   
+                        <div class="app-slot slot-7 empty-slot"></div>   
+                        <div class="app-slot slot-8 empty-slot"></div> 
+                        
+                        <div class="app-slot slot-9 empty-slot"></div>
+                        <div class="app-slot slot-10 empty-slot"></div>   
+                        <div class="app-slot slot-11 empty-slot"></div>   
+                        <div class="app-slot slot-12 empty-slot"></div>  
+                        
+                        <div class="app-slot slot-13 empty-slot"></div>
+                        <div class="app-slot slot-14 empty-slot"></div>   
+                        <div class="app-slot slot-15 empty-slot"></div>   
+                        <div class="app-slot slot-16 empty-slot"></div>  
+                    </div>
+                </div>
+
+                <div class="settings-app">
+                    <div class="settings-header"><p> Instellingen</p></div>
+
+                    <div class="customize-options">
+                        <div class="cat-titel"><span id="customize-titel">customize</span></div>
+                        <div class="settings-item" id="background-item">
+                            <i class="fa fa-image" id="option-icon"></i>
+                            <span id="settings-titel">Achtergrond</span><br>
+                            <span id="current-background">Gradient Green</span>
+                        </div>
+                    </div>
+
+                    <div class="other-options">
+                        <div class="cat-titel"><span id="option-titel">OTHER</span></div>
+                        <div class="settings-item">
+                            <i class="fa fa-bell" id="option-icon"></i>
+                            <span id="settings-titel">Notificaties</span><br>
+                            <span class="notify-state" id="current-setting-status">Aan</span></br>
+                            <div class="notify-btn">
+                                <input id="notification-toggle" type="checkbox" checked data-toggle="toggle" data-style="ios" data-on="&nbsp;" data-off="&nbsp;" data-size="mini" data-class="fast" data-onstyle="success" data-offstyle="danger">
+                            </div>
+                        </div>
+                        <div class="settings-item">
+                            <i class="fa fa-phone" id="option-icon"></i>
+                            <span id="settings-titel">Mijn Nummer</span><br>
+                            <span class="phone-num" id="current-setting-status"></span></br>
+                        </div>
+                    </div>
+
+                    <div class="background-block">
+                        <span id="background-titel"><p>Wallpaper</p></span>
+                        <span id="background-subtitel"><p>Kies je achtergrond</p></span>
+
+                        <div class="background-option selected-bg" id="bg-1"><p>Gradient Green</p></div>
+                        <div class="background-option" id="bg-2"><p>Abstract</p></div>
+                        <div class="background-option" id="bg-3"><p>Pink/Purple Water Drip</p></div>
+                    </div>
+                </div>
+
+                <div class="contacts-app">
+                    <div class="contacts-header">
+                        <p> Contacten</p>
+                    </div>
+                    <div class="add-contact-btn" data-toggle="tooltip" data-placement="left" title="Add Contact"><i class="fas fa-user-plus"></i></div>
+                    <div class="my-contact-information">
+                        <span id="firstletters"></span>
+                        <span id="myi-label">Mijn Contact Gegevens</span>
+                        <span id="myi-number"></span>
+                    </div>
+
+                    <div class="contact-list">
+                        <!-- auto generated contacts -->
+                    </div>
+
+                    <div class="add-contact-container">
+                        <span id="add-contact-titel"><p>Contact Toevoegen</p></span>
+                        <span id="add-contact-subtitel"><p>Vul contact gegevens in.</p></span>
+
+                        <div class="add-contact-inputs">
+                            <i class="fas fa-user-circle" id="person-add-icon"></i><input class="contactname-input" type="text" placeholder="Contactnaam">
+                            <i class="fas fa-phone" id="number-add-icon"></i><input class="number-input" type="text" placeholder="Nummer" max="20">
+                        </div>
+
+                        <div class="submit-contact-btn">
+                            <p>Bevestigen</p>
+                        </div>
+                        <div class="back-contact-btn">
+                            <p>Terug</p>
+                        </div>
+                    </div>
+
+                    <div class="edit-contact-container">
+                        <span id="edit-contact-titel"><p>Contact Bewerken</p></span>
+                        <span id="edit-contact-subtitel"><p>Hier kan je contact gegevens wijzigen.</p></span>
+
+                        <div class="edit-contact-inputs">
+                            <i class="fas fa-user-circle" id="person-add-icon"></i><input class="edit-contactname-input" type="text" placeholder="Contactnaam">
+                            <i class="fas fa-phone" id="number-add-icon"></i><input class="edit-number-input" type="text" placeholder="Nummer">
+                        </div>
+
+                        <div class="change-contact-btn">
+                            <p>Bevestigen</p>
+                        </div>
+                        <div class="delete-contact-btn">
+                            <p>Verwijder</p>
+                        </div>
+                        <div class="back-edit-contact-btn">
+                            <p>Terug</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="companies-app">
+                    <div class="companies-home">
+                        <div class="companies-accounts-tab">
+
+                        </div>
+                        
+                        <div class="companies-buttons">
+                            
+                        </div>
+                    </div>
+
+                    <div class="companies-settings">
+                        <div class="employees-accounts-tab">
+                            <div class="employee-item" id="lmao">
+                                <p class="employee-name">Kees Bekockt</p>
+                                <p class="employee-rank">Rank: 5</p>
+                            </div>
+                        </div>
+                        
+                        <div class="employees-buttons">
+                            
+                        </div>
+                    </div>
+                    
+
+                    <div class="quit-confirm-container">
+                        <span id="transfer-money-titel"><p>Bedrijf verwijderen</p></span>
+                        <span id="transfer-money-subtitel"><p>Weet je zeker dat je het bedrijf wilt verwijderen?</p></span>
+
+                        <div class="submit-quit-btn">
+                            <p>Bedrijf verwijderen</p>
+                        </div>
+                        <div class="back-quit-btn">
+                            <p>Terug</p>
+                        </div>
+                    </div>
+
+                    <div class="quitperson-confirm-container">
+                        <span id="transfer-money-titel"><p>Ontslag nemen</p></span>
+                        <span id="transfer-money-subtitel"><p>Weet je zeker dat je ontslag wil nemen?</p></span>
+
+                        <div class="submit-quitperson-btn">
+                            <p>Neem ontslag</p>
+                        </div>
+                        <div class="back-quitperson-btn">
+                            <p>Terug</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bank-app">
+                    <!-- <img src="./img/maze-bank.png" id="maze-bank-logo"> -->
+
+                    <!-- <div class="welcome-title"><p>Welkom Jay Yeet!</p></div> -->
+                    <!-- <div class="bank-information"><p><span id="balance-prefix">Saldo: <br><span id="euro-symbol">&euro; </span></span><span id="balance"></span><br> <span id="iban-prefix">IBAN: </span><span id="iban"></span></p></div> -->
+                
+                    <div class="bank-app-header">
+                        <div class="bank-app-header-tab bank-header-selected" data-tab="accounts">
+                            <i class="fas fa-credit-card"></i>
+                            <p>Rekeningen</p>
+                        </div>
+                        <div class="bank-app-header-tab" data-tab="bills">
+                            <i class="fas fa-file-invoice"></i>
+                            <p>Facturen</p>
+                        </div>
+                    </div>
+
+                    <div class="bank-accounts-tab">
+                        <div class="bank-account">
+                            <span class="account-name">Jay Yeet</span>
+                            <span class="account-number">NL05123599320943</span>
+                            <span class="account-balance">&euro; 500,-</span>
+                        </div>
+                    </div>
+
+                    <div class="bank-bills-tab">
+                        <div class="bank-bill">
+                            <span class="bill-name">Facturen zijn</span>
+                            <span class="bill-price">momenteel niet beschikbaar</span>
+                        </div>
+                    </div>
+                    
+                    <div class="bank-transfer-btn"><p>Geld Overmaken</p></div>
+
+                    <div class="transfer-money-container">
+                        <span id="transfer-money-titel"><p>Geld Overmaken</p></span>
+                        <span id="transfer-money-subtitel"><p>Vul gegevens in.</p></span>
+
+                        <div class="transfer-money-inputs">
+                            <input class="iban-input" type="text" placeholder="IBAN ontvanger">
+                            <input class="euro-amount-input" type="text" placeholder="Hoeveelheid in &euro;" oninput="updateNewBalance()">
+                        </div>
+
+                        <div class="new-balance">Nieuwe Saldo: &euro;<span id="new-balance"></span></div>
+
+                        <div class="submit-transfer-btn">
+                            <p>Geld Overmaken</p>
+                        </div>
+                        <div class="back-transfer-btn">
+                            <p>Terug</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="messages-app">
+                    <div class="messages-header">
+                        <p> Berichten</p>
+                    </div>
+
+                    <div class="chats-container">
+
+                    </div>
+
+                    <div class="chat-window">
+                        <div class="chat-window-header">
+                            <p><i class="fas fa-arrow-left" id="chat-window-arrow-left"></i> Jay Yeet</p>
+                        </div>
+
+                        <div class="text-input">
+                            <input type="text" class="message-input" placeholder="Type je bericht hier...">
+                            <div class="send-message"><i class="fas fa-paper-plane" id="send-message"></i></div>
+                            <div class="send-location"><i class="fas fa-map-marker-alt" id="send-message"></i></div>
+                        </div>
+
+                        <div class="messages">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="garage-app">
+                    <div class="garage-header">
+                        <p>Mijn <br>Voertuigen</p>
+                    </div>
+
+                    <div class="garage-vehicles">
+                    </div>
+                </div>
+
+                <div class="mails-app">
+                    <div class="mails-header">
+                        <p>QBus Mail</p><br><p>Inbox</p>
+                    </div>
+
+                    <div class="mails-list">
+                    </div>
+
+                    <div class="opened-mail">
+                    </div>
+                </div>
+
+                <div class="twitter-app">
+                    <div class="twitter-header">
+                        <p>Twitter</p>
+                    </div>
+
+                    <div class="twitter-tweets">
+                    </div>
+
+                    <div class="twitter-app-new-tweet">
+                        <div class="twitter-new-tweet-header">
+                            <p>Nieuwe Tweet</p>
+                        </div>
+
+                        <textarea name="" id="new-tweet-message" placeholder="Twitter bericht" id="" cols="30" rows="10" spellcheck="false"></textarea>
+
+                        <div class="send-new-tweet"><p>Verzend</p></div>
+                        <div class="cancel-new-tweet"><p>Annuleer</p></div>
+
+                        <!-- <input type="text" > -->
+                    </div>
+
+                    <div class="twitter-new-tweet"><i class="fas fa-pen" id="twitter-new-tweet-icon"></i></div>
+                </div>
+
+                <div class="advert-app">
+                    <div class="advert-header">
+                        <p>Advertenties</p>
+                    </div>
+
+                    <div class="advert-ads">
+                        <div class="advert-app-ad"><div class="advert-poster"><span class="poster-name">Austin Kash</span> | <span class="poster-phone">0612345678</span></div><hr><div class="advert-message"><p>Dit is een coole advertentie yo!</p></div></div>
+                    </div>
+
+                    <div class="advert-app-new-ad">
+                        <div class="advert-new-ad-header">
+                            <p>Nieuwe Advertentie</p>
+                        </div>
+
+                        <textarea name="" id="new-advert-message" placeholder="Advertentie bericht" id="" cols="30" rows="10" spellcheck="false"></textarea>
+
+                        <div class="send-new-ad"><p>Verzend</p></div>
+                        <div class="cancel-new-ad"><p>Annuleer</p></div>
+
+                        <!-- <input type="text" > -->
+                    </div>
+
+                    <div class="advert-new-ad"><i class="fas fa-pen" id="advert-new-ad-icon"></i></div>
+                </div>
+
+                <div class="police-app">
+                    <div class="police-header">
+                        <p><span class="app-title">MEOS</span><span class="app-character-name"></span></p>
+                    </div>
+                    <div class="police-tabs">
+                        <div class="police-tab-item" id="person">
+                            <div class="police-tab-info">
+                                <i class="fas fa-user"></i>
+                                <p class="police-tab-label">Persoon</p>
+                            </div>
+                        </div>
+                        <div class="police-tab-item" id="vehicle">
+                            <div class="police-tab-info">
+                                <i class="fas fa-car"></i>
+                                <p class="police-tab-label">Voertuig</p>
+                            </div>
+                        </div>
+                        <div class="police-tab-item" id="alerts">
+                            <div class="police-tab-info">
+                                <i class="fas fa-bell"></i>
+                                <p class="police-tab-label">Meldingen</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="police-person">
+                        <div class="police-search-person">
+                            <input class="police-input" id="person-input-search" type="text" placeholder="Zoek persoon.." />
+                            <button class="btn police-button" id="person-button-search">Zoek</button>
+                        </div>
+                        <div class="police-person-found">
+                            
+                        </div>
+                    </div>
+                    <div class="police-vehicle">
+                        <div class="police-search-vehicle">
+                            <input class="police-input" id="vehicle-input-search" type="text" placeholder="Zoek kenteken.." />
+                            <button class="btn police-button" id="vehicle-button-search">Zoek</button>
+                            <button class="btn police-button" id="vehicle-button-scan" style="width:50%; margin-top: 1vh; float:left;">SCAN KENTEKEN</button>
+                        </div>
+                        <div class="police-vehicle-found">
+                            
+                        </div>
+                    </div>
+                    <div class="police-alerts">
+                        <div class="police-alerts-buttons">
+                            <button class="btn police-button" id="alert-button-clear" style="margin-top: 1vh;">CLEAR</button>
+                        </div>
+                        <div class="police-incomming-alerts">
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="call-app">
+                    <div class="incoming-call">
+                        <div class="call-header">
+                            <p>Inkomende Oproep</p>
+                        </div>
+
+                        <div class="incoming-call-number call-number"><p></p></div>
+
+                        <div class="incoming-call-answer"><i class="fa fa-phone-alt"></i></div>
+                        <div class="incoming-call-deny"><i class="fa fa-phone-alt"></i></div>
+                    </div>
+
+                    <div class="outgoing-call">
+                        <div class="call-header">
+                            <p>Uitgaande Oproep</p>
+                        </div>
+
+                        <div class="busy-call-number call-number"><p></p></div>
+
+                        <div class="busy-call-deny"><i class="fa fa-phone-alt"></i></div>
+                    </div>
+
+                    <div class="busy-call">
+                        <div class="call-header">
+                            <p>In Gesprek</p>
+                        </div>
+
+                        <div class="busy-call-number call-number"><p></p></div>
+
+                        <div class="busy-call-deny"><i class="fa fa-phone-alt"></i></div>
+                    </div>
+
+                </div>
+
+                <div class="suggestedContact">
+                    <div class="suggestedContact-header"><p>Je hebt een nieuw voorgesteld contactpersoon</p></div>
+
+                    <div class="suggestedContact-buttons">
+                        <div class="suggestedContact-button" id="suggestedContact-accept"><p>Accepteren</p></div>
+                        <div class="suggestedContact-button" id="suggestedContact-deny"><p>Weiger</p></div>
+                    </div>
+                </div>
+
+                <div class="suggestedBank">
+                    <div class="suggestedBank-header"><p>Je hebt een nieuw voorgesteld Bankrekening nr.</p></div>
+
+                    <div class="suggestedBank-buttons">
+                        <div class="suggestedBank-button" id="suggestedBank-accept"><p>Accepteren</p></div>
+                        <div class="suggestedBank-button" id="suggestedBank-deny"><p>Weiger</p></div>
+                    </div>
+                </div>
+
+                <div class="phone-notify">
+                    <span id="notify-titel"></span>
+                    <span id="notify-message"></span>
+                </div>
+
+                <div class="home-container">
+                    <div class="home-btn"></div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="./script.js"></script>
+        <link href="tooltip.css" rel="stylesheet">
+    </body>
+</html>

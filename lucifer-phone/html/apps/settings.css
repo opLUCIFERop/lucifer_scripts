@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+.settings-app {
+    display: none;
+    position: relative;
+    width: 103.5%;
+    height: 103.5%;
+    /* top: 102%; */
+    top: 103.5%;
+    right: 0;
+    border-radius: 10px;
+    background-color: rgb(236, 236, 236);
+}
+
+.settings-header {
+    position: absolute;
+    top: 8%;
+    left: 2vh;
+    width: 100%;
+    height: 15%;
+}
+
+.settings-header > p {
+    font-size: 19px;
+    font-family: 'Lato';
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    overflow: visible;
+}
+
+.settings-item {
+    position: relative;
+    top: 17%;
+    width: 100%;
+    height: 50px;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 7px;
+}
+
+.settings-item > span {
+    line-height: 22px;
+    margin-left: 55px;
+}
+
+#settings-titel {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#current-setting-status {
+    font-size: 11px;
+}
+
+#current-background {
+    font-size: 11px;
+}
+
+.pull-right {
+    float: right;
+}
+  
+.notify-btn {
+    position: absolute;
+    right: 5%;
+    top: 7%;
+}
+
+.other-options {
+    position: relative;
+    top: 17%;
+    width: 100%;
+    height: 30%;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 7px;
+    border-bottom: 3px solid rgba(124, 124, 124, 0.205);
+}
+
+#option-titel {
+    position: absolute;
+    left: 55px;
+    top: 0;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    color: #4059c7;
+}
+
+.customize-options {
+    position: relative;
+    top: 15%;
+    width: 100%;
+    height: 20%;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 7px;
+    border-bottom: 3px solid rgba(124, 124, 124, 0.205);
+}
+
+#customize-titel {
+    position: absolute;
+    left: 55px;
+    top: 0;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    color: #4059c7;
+}
+
+#option-icon {
+    position: absolute;
+    left: 6px;
+    background-color: rgb(230, 230, 230);
+    padding: 10px;
+    border-radius: 50%;
+    color: #4059c7;
+    font-size: 17px;
+    width: 37px;
+    height: 37px;
+}
+
+#customSwitch1 {
+    color: black;
+}
+
+.background-block {
+    display: none;
+    position: absolute;
+    width: 90%;
+    height: 50%;
+    top: 103.5%;
+    background-color: white;
+    margin: 0 auto;
+    left: 0;
+    right: 2%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px -2px rgba(0,0,0,0.75);
+}
+
+#background-titel {
+    position: relative;
+    top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: sans-serif !important;
+    text-align: center;
+}
+
+#background-subtitel {
+    position: relative;
+    top: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.background-option {
+    position: relative;
+    width: 100%;
+    height: 10%;
+    background-color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: center;
+    top: 20%;
+    margin-top: 12px;
+    transition: all 0.1s ease-in-out;
+}
+
+.background-option:hover {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.background-option > p {
+    font-size: 12px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.selected-bg {
+    border-bottom: 1px solid #4059c7;
+}
+
+.phone-notify {
+    display: none;
+    position: absolute;
+    top: -10%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 85%;
+    height: 60px;
+    background-color: rgb(238, 238, 238);
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.493);
+    z-index: 200;
+}
+
+#notify-titel {
+    position: absolute;
+    top: 5%;
+    left: 3%;
+    font-size: 12px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#notify-message {
+    position: absolute;
+    font-size: 12px;
+    font-family: 'Source Sans Pro', sans-serif;
+    top: 40%;
+    left: 3%;
+}
